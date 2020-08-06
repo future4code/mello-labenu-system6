@@ -2,7 +2,7 @@ export interface IHumanEntity {
     id: string;
     nome: string;
     email: string;
-    dataDeNascimento: string;
+    dataDeNascimento: moment.Moment;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -43,8 +43,8 @@ export enum IModules {
 export interface IMission {
     id: string;
     nome: string;
-    dataDeInicio: string;
-    dataDeTermino: string;
+    dataDeInicio: moment.Moment;
+    dataDeTermino: moment.Moment;
     modulo: IModules;
     alunos: IStudent[];
     docentes: ITeacher[];
