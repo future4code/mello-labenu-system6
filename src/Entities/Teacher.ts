@@ -1,13 +1,12 @@
-import { ITeacher, ITeacherPerks } from "../Types/index";
+import { ITeacherPerks } from "../Types/index";
 import { Human } from "./Factories/Human";
 
-
-export class Teacher extends Human implements ITeacher {
+export class Teacher extends Human {
     constructor(
-        public readonly nome: string,
-        public readonly email: string,
-        public readonly dataDeNascimento: string,
-        public perks: ITeacherPerks[]
+        nome: string,
+        email: string,
+        dataDeNascimento: moment.Moment,
+        private perks: ITeacherPerks[]
     ) {
         super(nome, email, dataDeNascimento);
     }
