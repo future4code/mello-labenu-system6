@@ -2,7 +2,7 @@ import { IHumanEntity } from "../Types";
 import { v4 } from "uuid";
 
 export abstract class Human implements IHumanEntity {
-    id: string;
+    public readonly id: string;
 
     constructor(
         public readonly nome: string,

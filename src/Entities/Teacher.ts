@@ -1,6 +1,7 @@
 import { ITeacher, ITeacherPerks } from "../Types/index";
 import { Human } from "./Human";
 
+
 export class Teacher extends Human implements ITeacher {
     constructor(
         public readonly nome: string,
