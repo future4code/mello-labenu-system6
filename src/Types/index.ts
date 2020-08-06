@@ -12,7 +12,7 @@ export enum ITeacherPerks {
     REDUX = "Redux",
     CSS = "CSS",
     TESTES = "Testes",
-    TS = "Typescript",
+    TS = "TypeScript",
     POO = "Programação Orientada a Objetos",
     BACK_END = "Backend",
 }
