@@ -6,7 +6,7 @@ export class Student extends Human {
         nome: string,
         email: string,
         dataDeNascimento: moment.Moment,
-        private hobbies: string[]
+        public hobbies: string[] = []
     ) {
         super(nome, email, dataDeNascimento);
     }

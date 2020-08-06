@@ -6,7 +6,7 @@ export class Teacher extends Human {
         nome: string,
         email: string,
         dataDeNascimento: moment.Moment,
-        private perks: ITeacherPerks[]
+        public perks: ITeacherPerks[] = []
     ) {
         super(nome, email, dataDeNascimento);
     }
