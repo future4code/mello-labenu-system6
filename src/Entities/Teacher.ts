@@ -1,5 +1,5 @@
 import { ITeacher, ITeacherPerks } from "../Types/index";
-import { Human } from "./Human";
+import { Human } from "./Factories/Human";
 
 
 export class Teacher extends Human implements ITeacher {

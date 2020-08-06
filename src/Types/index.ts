@@ -46,6 +46,8 @@ export interface IMission {
     dataDeInicio: string;
     dataDeTermino: string;
     modulo: IModules;
+    alunos: IStudent[];
+    docentes: ITeacher[];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////

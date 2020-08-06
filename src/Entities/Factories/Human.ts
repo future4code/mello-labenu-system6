@@ -1,4 +1,4 @@
-import { IHumanEntity } from "../Types";
+import { IHumanEntity } from "../../Types";
 import { v4 } from "uuid";
 
 export abstract class Human implements IHumanEntity {

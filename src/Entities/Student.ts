@@ -1,4 +1,4 @@
-import { Human } from "./Human";
+import { Human } from "./Factories/Human";
 import { IStudent } from "../Types/index";
 
 export class Student extends Human implements IStudent {
