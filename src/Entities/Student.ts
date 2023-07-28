@@ -1,13 +1,17 @@
 import { Human } from "./Factories/Human";
-import { IStudent } from "../Types/index";
+import moment from "moment";
 
-export class Student extends Human implements IStudent {
+export class Student extends Human {
     constructor(
-        public readonly nome: string,
-        public readonly email: string,
-        public readonly dataDeNascimento: string,
-        public hobbies: string[]
+        nome: string,
+        email: string,
+        dataDeNascimento: moment.Moment,
+        public hobbies: string[] = []
     ) {
         super(nome, email, dataDeNascimento);
+    }
+
+    public getAge(): number {
+        return moment().diff(this.dataDeNascimento, "years");
     }
 }

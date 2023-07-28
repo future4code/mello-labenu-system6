@@ -1,12 +1,12 @@
 import { Mission } from "./Factories/Mission";
-import { IMission, IModules } from "../Types";
+import { IModules } from "../Types";
 
-export class DayMission extends Mission implements IMission {
+export class DayMission extends Mission {
     constructor(
-        public readonly nome: string,
-        public readonly dataDeInicio: string,
-        public readonly dataDeTermino: string,
-        public readonly modulo: IModules
+        nome: string,
+        dataDeInicio: moment.Moment,
+        dataDeTermino: moment.Moment,
+        modulo: IModules
     ) {
         super(nome, dataDeInicio, dataDeTermino, modulo);
     }
